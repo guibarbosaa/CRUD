@@ -18,7 +18,7 @@ def conectarBD(host, usuario, senha, DB):
 
 #INSERT
 def insert_BD():
-    connection = conectarBD("localhost","root", "50374525Gui", "projeto") #Recebe a conexão estabelecida com o banco
+    connection = conectarBD("localhost","root", #adicione sua senha do banco de dados, "projeto") #Recebe a conexão estabelecida com o banco
     cursor = connection.cursor() #Cursor para comunicação com o banco[]
     nome = telaCliente.txtnomecliente.text()
     cpf = telaCliente.txtcpf.text()
@@ -57,7 +57,7 @@ def insert_BD():
 
 
 def insert_BD2():
-    connection = conectarBD("localhost","root", "50374525Gui", "projeto") #Recebe a conexão estabelecida com o banco
+    connection = conectarBD("localhost","root", " #adicione sua senha do banco de dados", "projeto") #Recebe a conexão estabelecida com o banco
     cursor = connection.cursor() #Cursor para comunicação com o banco
 
     nome = telaAnimal.txtnomeanimal.text()
@@ -88,7 +88,7 @@ def insert_BD2():
     QtWidgets.QMessageBox.about(telaAnimal , 'SUCESSO!',"Foi cadastrado o novo Animal de ID: " + str(userid))      
 
 def read_BD():
-    connection = conectarBD("localhost","root", "50374525Gui", "projeto") #Recebe a conexão estabelecida com o banco
+    connection = conectarBD("localhost","root", " #adicione sua senha do banco de dados", "projeto") #Recebe a conexão estabelecida com o banco
     cursor = connection.cursor() #Cursor para comunicação com o banco
 
     
@@ -115,7 +115,7 @@ def read_BD():
     connection.close() #Fecha a conexão com o banco
 
 def read_BD2():
-    connection = conectarBD("localhost","root", "50374525Gui", "projeto") #Recebe a conexão estabelecida com o banco
+    connection = conectarBD("localhost","root", " #adicione sua senha do banco de dados", "projeto") #Recebe a conexão estabelecida com o banco
     cursor = connection.cursor() #Cursor para comunicação com o banco
 
     
@@ -143,7 +143,7 @@ def read_BD2():
 
 
 def Delete_DB():
-    connection = conectarBD("localhost","root", "50374525Gui", "projeto")
+    connection = conectarBD("localhost","root", " #adicione sua senha do banco de dados", "projeto")
     cursor = connection.cursor()
 
     id = telaConsultaAnimal.txtid.text()
@@ -165,7 +165,7 @@ def Delete_DB():
 
 
 def Delete_DB2():
-    connection = conectarBD("localhost","root", "50374525Gui", "projeto")
+    connection = conectarBD("localhost","root", " #adicione sua senha do banco de dados", "projeto")
     cursor = connection.cursor()
 
     CPF = telaConsultaCliente.txtcpfconsulta.text()
@@ -189,7 +189,7 @@ def Delete_DB2():
 
 
 def Update_DB ():
-    connection = conectarBD("localhost","root", "50374525Gui", "projeto")
+    connection = conectarBD("localhost","root", " #adicione sua senha do banco de dados", "projeto")
     cursor = connection.cursor()
     nome = telaAnimal.txtnomeanimal.text()
     data_nasc = telaAnimal.txtdataanimal.text()
@@ -213,7 +213,7 @@ def Update_DB ():
     QtWidgets.QMessageBox.about( telaAnimal,"Sucesso!!", " Registros alterados!!")     
 
 def Update_DB2 ():
-    connection = conectarBD("localhost","root", "50374525Gui", "projeto")
+    connection = conectarBD("localhost","root", " #adicione sua senha do banco de dados", "projeto")
     cursor = connection.cursor()
     
     nome = telaCliente.txtnomecliente.text()
